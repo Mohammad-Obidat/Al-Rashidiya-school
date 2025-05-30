@@ -16,7 +16,14 @@ You can visit the site here:
 
 ## 📁 Project Structure
 
-index.html # Main webpage
-style.css # Stylesheet
-js/ # JavaScript files
-assets/ # Images
+Al-Rashidiya-school/
+├── images/ # Folder for all image assets
+│ ├── cap.png
+│ ├── diploma-icon.png
+│ ├── favicon.ico
+│ └── logo.jpeg
+├── graduatesData.js # JavaScript file containing graduates' names and GPAs
+├── index.esm.js # Main JavaScript module
+├── index.html # Main HTML file (homepage)
+├── style.css # CSS file for styling
+└── README.md # Project documentation (this file)
