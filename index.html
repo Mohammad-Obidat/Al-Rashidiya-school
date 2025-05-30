@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الرشيدية - قائمة الناجحين 2025</title>
+    <link rel="shortcut icon" href="./images/logo.jpeg" type="image/x-jpeg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="hero-section">
+      <div class="floating-elements" id="floatingElements"></div>
+      <div class="main-content">
+        <div class="graduation-cap">
+          <img src="./images/cap.png" alt="Graduation Cap" />
+        </div>
+        <h1 class="title">الرشيدية - Al-Rashidiya</h1>
+        <h2 class="subtitle">Graduation</h2>
+        <div class="school-logo">
+          <img
+            src="./images/logo.jpeg"
+            alt="Al-Rashidiya Logo"
+            style="border: 3px solid #000000"
+          />
+        </div>
+        <button class="cta-button" onclick="scrollToGraduates()">
+          عرض قائمة الناجحين
+        </button>
+      </div>
+    </section>
+
+    <div class="scroll-indicator">
+      <i class="scroll-arrow fa-solid fa-circle-arrow-down"></i>
+    </div>
+
+    <section class="graduates-section" id="graduatesSection">
+      <h2 class="section-title">قائمة الناجحين - دفعة 2025</h2>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" onclick="filterGraduates('all')">
+          جميع الناجحين
+        </button>
+        <button class="filter-btn" onclick="filterGraduates('scientific')">
+          الفرع العلمي
+        </button>
+        <button class="filter-btn" onclick="filterGraduates('literary')">
+          الفرع الأدبي
+        </button>
+      </div>
+
+      <div class="search-bar-container">
+        <i class="fas fa-search search-icon"></i>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="ابحث عن اسم الطالب ..."
+          oninput="searchGraduatesByName(); toggleClearButton()"
+        />
+        <i
+          class="fas fa-times clear-icon"
+          id="clearSearchBtn"
+          onclick="clearSearch()"
+        ></i>
+      </div>
+
+      <div class="graduates-grid" id="graduatesGrid">
+        <!-- Graduates will be populated by JavaScript -->
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
