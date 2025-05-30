@@ -124,4 +124,5 @@ document.addEventListener('DOMContentLoaded', () => {
 window.filterGraduates = filterGraduates;
 window.searchGraduatesByName = searchGraduatesByName;
 window.clearSearch = clearSearch;
+window.toggleClearButton = toggleClearButton;
 window.scrollToGraduates = scrollToGraduates;
